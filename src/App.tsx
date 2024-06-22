@@ -7,6 +7,7 @@ import { authors } from "./data/authors";
 import { books } from "./data/books";
 import { LargeBookListItem } from "./component/books/LargeListItem";
 import React from "react";
+import Modal from "./component/Modal";
 
 // 1. Screen Splitter
 // const LeftSidePanel = ({ title }) => {
@@ -40,8 +41,7 @@ function App() {
     // Crating common component for mapping which increase re usability
     // below is the code example 
 
-    */}
-
+   
       <RegularList
         items={authors}
         sourceName={"authors"}
@@ -58,6 +58,12 @@ function App() {
         sourceName={"books"}
         ItemComponent={LargeBookListItem}
       />
+       */}
+
+      {/* 3. Modal */}
+      <Modal>
+        <LargeBookListItem books={books[0]} />
+      </Modal>
     </>
   );
 }
