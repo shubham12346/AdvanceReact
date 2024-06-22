@@ -10,39 +10,40 @@ import React from "react";
 import Modal from "./component/Modal";
 
 // 1. Screen Splitter
-// const LeftSidePanel = ({ title }) => {
-//   return <h2 style={{ backgroundColor: "crimson" }}>{title}</h2>;
-// };
-//
-// const RightSidePanel = ({ title }) => {
-//   return <h2 style={{ backgroundColor: "burlywood" }}>{title}</h2>;
-// };
+const LeftSidePanel = ({ title }) => {
+  return <h2 style={{ backgroundColor: "crimson" }}>{title}</h2>;
+};
+
+const RightSidePanel = ({ title }) => {
+  return <h2 style={{ backgroundColor: "burlywood" }}>{title}</h2>;
+};
 
 function App() {
   return (
     <>
       {/* // for  layout component,
     // 1. Screen-Splitter
-    // It is not scalable passing children as props, below is the example
-    // <SplitScree
-    //   Left={LeftSidePanel}
-    //   leftWidth={1}
-    //   Right={RightSidePanel}
-    //   rightWidth={3}
-    // />
-    // it is always better to pass sub components as children than props ,it is cleaner
-    // below is the code example
-    // <SplitScreen leftWidth={1} rightWidth={3}>
-    //   <LeftSidePanel title={"Left"} />
-    //   <RightSidePanel title={"right"} />
-    // </SplitScreen>
+    // It is not scalable passing children as props, below is the example */}
+      {/* <SplitScreen
+        Left={LeftSidePanel}
+        leftWidth={1}
+        Right={RightSidePanel}
+        rightWidth={3}
+      /> */}
 
-    // 2. List component 
+      {/* // it is always better to pass sub components as children than props ,it is cleaner
+    // below is the code example */}
+
+      {/* <SplitScreen leftWidth={1} rightWidth={3}>
+       <LeftSidePanel title={"Left"} />
+       <RightSidePanel title={"right"} />
+     </SplitScreen> */}
+
+      {/* // 2. List component 
     // Crating common component for mapping which increase re usability
-    // below is the code example 
+    // below is the code example  */}
 
-   
-      <RegularList
+      {/* <RegularList
         items={authors}
         sourceName={"authors"}
         ItemComponent={SmallAuthorListItem}
@@ -57,8 +58,7 @@ function App() {
         items={books}
         sourceName={"books"}
         ItemComponent={LargeBookListItem}
-      />
-       */}
+      /> */}
 
       {/* 3. Modal */}
       <Modal>
