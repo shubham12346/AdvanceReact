@@ -41,6 +41,7 @@ const ContainerComponent = () => {
         }
         render={(resource) => <UserInfo user={resource} />}
       ></DataSource>
+
       <DataSourceWithLocalStorage
         getData={() => getDataFromLocalStorag("")}
         resourceName={"msg"}
