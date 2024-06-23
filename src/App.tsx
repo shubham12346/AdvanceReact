@@ -8,6 +8,7 @@ import { books } from "./data/books";
 import { LargeBookListItem } from "./component/books/LargeListItem";
 import React from "react";
 import Modal from "./component/Modal";
+import ContainerComponent from "./containerComponent/ContainerComponent";
 
 // 1. Screen Splitter
 const LeftSidePanel = ({ title }) => {
@@ -61,9 +62,11 @@ function App() {
       /> */}
 
       {/* 3. Modal */}
-      <Modal>
+      {/* <Modal>
         <LargeBookListItem books={books[0]} />
-      </Modal>
+      </Modal> */}
+      {/* Module 2 Container component  */}
+      <ContainerComponent />
     </>
   );
 }
