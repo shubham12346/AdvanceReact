@@ -80,6 +80,7 @@ const Index = () => {
         onClose={() => setShouldDisplay(false)}
       >
         <p>I am the content in the modal</p>
+    
       </ControlledModal> */}
 
       {/* 4 .  UnControlled  flows  */}
